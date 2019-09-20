@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Segoe WP";
+    src: url(./assets/fonts/SegoeWP.ttf) format('truetype');
+  }
+  
+
+
+
+body {
+    width: 1300px;
+    height: 1848px;
+    background-image: url("./assets/images/header_background.png");
+    background-repeat: no-repeat;
+    background-size: 1300px 566px;
+}
+
+.header {
+    width: 1300px;
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.logo-header {
+    display: flex; 
+}
+.logo-header img {
+   width: 83px;
+   height: 83px;
+   margin: 28px 6px 0px 140px;
+   background-image: url("./assets/images/logo_background.png");
+   background-size: 79px 79px;
+   background-position-x: 2px;
+   background-position-y: 2px;
+   background-repeat: no-repeat;
+}
+.logo-header h2 {
+   width: 225px;
+   margin-top: 55px;
+   font-size: 41px;
+   color: #ffffff;
+   font-family: "Lucida Sans";
+   font-style: italic;
+   text-transform: uppercase; 
+}
+
+.navbar  ul  {
+    display: flex;
+    margin: 71px 140px 0px 0px;
+    box-shadow: -4px -5px 0px 0px rgba(245,197,7,0.5),-8px -8px 0px 0px rgba(245,197,7,0.5);
+    
+   
+}
+
+.navbar ul li a {
+    width: 150px;
+    height: 41px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe WP";
+    font-size: 17px;
+    text-transform: uppercase; 
+    color: #9b7d08;
+    background-color: #f5c506;
+    text-decoration: none;
+    
+}
+
+.navbar ul li {
+    border-left: 1px solid #dcb105;
+}
+ .navbar ul li:first-child {
+    border: none;
+}
+
+.section-1 {
+    width: 1300px;
+    height: 401px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.section-1 h1 {
+    font-size: 63px;
+    letter-spacing: 1px;
+    line-height: 78px;
+    color: #f5c506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.section-1 h1 span {
+    color:#ffffff;
+}
+.section-1 button:first-child {
+    width: 32px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #f5c506;
+}
+
+.section-1 button:last-child {
+    width: 32px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #f5c506;
+}
+
