@@ -7,11 +7,14 @@
 
 
 body {
-    width: 1300px;
-    height: 1848px;
     background-image: url("./assets/images/header_background.png");
     background-repeat: no-repeat;
-    background-size: 1300px 566px;
+   
+}
+
+.wrapper {
+    width: 1020px;
+    height: 1848px;
 }
 
 .header {
@@ -34,7 +37,10 @@ body {
    background-position-x: 2px;
    background-position-y: 2px;
    background-repeat: no-repeat;
+   border-radius: 13px;
+
 }
+
 .logo-header h2 {
    width: 225px;
    margin-top: 55px;
@@ -43,14 +49,16 @@ body {
    font-family: "Lucida Sans";
    font-style: italic;
    text-transform: uppercase; 
+  
 }
 
 .navbar  ul  {
+    width: 453px;
+    height: 41px;
     display: flex;
     margin: 71px 140px 0px 0px;
-    box-shadow: -4px -5px 0px 0px rgba(245,197,7,0.5),-8px -8px 0px 0px rgba(245,197,7,0.5);
-    
-   
+    box-shadow: -4px -5px 0px 0px rgba(245,197,7,0.27),-8px -8px 0px 0px rgba(245,197,7,0.27);
+
 }
 
 .navbar ul li a {
@@ -66,7 +74,6 @@ body {
     color: #9b7d08;
     background-color: #f5c506;
     text-decoration: none;
-    
 }
 
 .navbar ul li {
@@ -76,7 +83,7 @@ body {
     border: none;
 }
 
-.section-1 {
+.main {
     width: 1300px;
     height: 401px;
     display: flex;
@@ -84,7 +91,7 @@ body {
     align-items: center;
    
 }
-.section-1 h1 {
+.main h1 {
     font-size: 63px;
     letter-spacing: 1px;
     line-height: 78px;
@@ -95,24 +102,57 @@ body {
     text-transform: uppercase; 
 }
 
-.section-1 h1 span {
+.main video {
+    width: 549px;
+    height: 327px;
+    margin: 2px 0px 71px 34px;
+}
+.main h1 span {
     color:#ffffff;
 }
-.section-1 button:first-child {
+.main button:first-child {
     width: 32px;
     height: 57px;
     display: flex;
     justify-content: center;
     border: none;
     background-color: #f5c506;
+    opacity: 0.71;
 }
 
-.section-1 button:last-child {
+.main button:last-child {
     width: 32px;
     height: 57px;
     display: flex;
     justify-content: center;
+    text-align: center;
     border: none;
     background-color: #f5c506;
 }
 
+.section-1 {
+    width: 1020px;
+    height: 212px;
+    display:flex;
+    margin: 0px 140px;
+}
+
+.section-1 div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid #d4d4d4;
+}
+
+.section-1 div h3 {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; 
+}
