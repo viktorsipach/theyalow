@@ -2,16 +2,26 @@
     font-family: "Segoe WP";
     src: url(./assets/fonts/SegoeWP.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: "SegoeWP-light";
+    src: url(./assets/fonts/segoe-wp-light.ttf) format('truetype');
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(./assets/fonts/PTS55F.ttf) format('truetype');
+  }
   
-
-
-
 body {
-    width: 1300px;
-    height: 1848px;
     background-image: url("./assets/images/header_background.png");
     background-repeat: no-repeat;
-    background-size: 1300px 566px;
+   
+}
+
+.wrapper {
+    width: 1020px;
+    height: 1848px;
 }
 
 .header {
@@ -25,6 +35,7 @@ body {
 .logo-header {
     display: flex; 
 }
+
 .logo-header img {
    width: 83px;
    height: 83px;
@@ -34,23 +45,28 @@ body {
    background-position-x: 2px;
    background-position-y: 2px;
    background-repeat: no-repeat;
+   border-radius: 13px;
+
 }
+
 .logo-header h2 {
    width: 225px;
    margin-top: 55px;
    font-size: 41px;
    color: #ffffff;
-   font-family: "Lucida Sans";
+   font-family: "Lucida Sans",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-style: italic;
    text-transform: uppercase; 
+  
 }
 
 .navbar  ul  {
+    width: 453px;
+    height: 41px;
     display: flex;
     margin: 71px 140px 0px 0px;
-    box-shadow: -4px -5px 0px 0px rgba(245,197,7,0.5),-8px -8px 0px 0px rgba(245,197,7,0.5);
-    
-   
+    box-shadow: -4px -5px 0px 0px rgba(245,197,7,0.27),-8px -8px 0px 0px rgba(245,197,7,0.27);
+
 }
 
 .navbar ul li a {
@@ -66,17 +82,17 @@ body {
     color: #9b7d08;
     background-color: #f5c506;
     text-decoration: none;
-    
 }
 
 .navbar ul li {
     border-left: 1px solid #dcb105;
 }
+
  .navbar ul li:first-child {
     border: none;
 }
 
-.section-1 {
+.main {
     width: 1300px;
     height: 401px;
     display: flex;
@@ -84,7 +100,8 @@ body {
     align-items: center;
    
 }
-.section-1 h1 {
+
+.main h1 {
     font-size: 63px;
     letter-spacing: 1px;
     line-height: 78px;
@@ -95,24 +112,144 @@ body {
     text-transform: uppercase; 
 }
 
-.section-1 h1 span {
+.main video {
+    width: 549px;
+    height: 327px;
+    margin: 2px 0px 71px 34px;
+}
+
+.main h1 span {
     color:#ffffff;
 }
-.section-1 button:first-child {
+
+.main button:first-child {
     width: 32px;
     height: 57px;
     display: flex;
     justify-content: center;
     border: none;
     background-color: #f5c506;
+    opacity: 0.71;
 }
 
-.section-1 button:last-child {
+.main button:last-child {
     width: 32px;
     height: 57px;
     display: flex;
     justify-content: center;
+    text-align: center;
     border: none;
     background-color: #f5c506;
 }
 
+.wrapper-section-1 {
+    width: 1300px;
+    height: 212px;
+    background-image: url("./assets/images/background-section1.png");
+    background-size: cover;
+}
+
+.section-1 {
+    width: 1020px;
+    height: 212px;
+    margin-left: 140px;
+    display: flex;
+   }
+
+.section-1 div {
+    width: 300px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border-right: 1px solid #d4d4d4;
+}
+
+.section-1 div:first-child  {
+    border-left: 1px solid #d4d4d4;
+}
+
+.section-1 div:first-child img {
+    margin: 33px 4px 0px 0px;
+   
+}
+
+.section-1 div:first-child p {
+    line-height: 52px;
+    margin-left: 16px;
+   
+}
+
+.section-1 div p {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; 
+  
+}
+
+.section-2 {
+    width: 1300px;
+    height: 509px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/images/background-section2.png")
+}
+
+.section-2 h2 {
+    position: absolute;
+    margin: -199px 0px 0px -254px;
+    letter-spacing: 3px;
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 37px;
+    color: #ffffff;
+    text-transform: uppercase; 
+  
+
+}
+
+.section-2 div h3 {
+   width: 272px;
+   height: 174px;
+    font-size: 29px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "SegoeWP-light";
+    font-weight: 300;
+
+}
+
+.section-2 div:nth-of-type(1) {
+    width: 341px;
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec9e03;
+
+}
+
+.section-2 div:nth-of-type(2) {
+    width: 315px;
+    height: 232px;
+}
+
+.section-2 div:nth-of-type(3) {
+    width: 329px;
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec9e03;
+   
+
+}
