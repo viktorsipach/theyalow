@@ -12,11 +12,20 @@
     font-family: "PT Sans";
     src: url(./assets/fonts/PTS55F.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: "PT Sans Narrow";
+    src: url(./assets/fonts/PTN57F.ttf) format('truetype');
+  }
   
+  @font-face {
+    font-family: "Open Sans";
+    src: url(./assets/fonts/OpenSans-Regular.ttf) format('truetype');
+  }
 body {
     background-image: url("./assets/images/header_background.png");
     background-repeat: no-repeat;
-   
+    
 }
 
 .wrapper {
@@ -40,12 +49,13 @@ body {
    width: 83px;
    height: 83px;
    margin: 28px 6px 0px 140px;
+   border-radius: 13px;
    background-image: url("./assets/images/logo_background.png");
    background-size: 79px 79px;
    background-position-x: 2px;
    background-position-y: 2px;
    background-repeat: no-repeat;
-   border-radius: 13px;
+  
 
 }
 
@@ -82,6 +92,10 @@ body {
     color: #9b7d08;
     background-color: #f5c506;
     text-decoration: none;
+}
+
+.navbar ul li a img {
+    margin-right: 9px;
 }
 
 .navbar ul li {
@@ -147,6 +161,8 @@ body {
     height: 212px;
     background-image: url("./assets/images/background-section1.png");
     background-size: cover;
+    box-shadow: 0px -4px 2px 0px rgba(0,0,0,0.2);
+   
 }
 
 .section-1 {
@@ -199,7 +215,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./assets/images/background-section2.png")
+    background-image: url("./assets/images/background-section2.png");
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.9);
 }
 
 .section-2 h2 {
@@ -211,19 +228,17 @@ body {
     font-size: 37px;
     color: #ffffff;
     text-transform: uppercase; 
-  
-
 }
 
 .section-2 div h3 {
     width: 272px;
     height: 174px;
+    margin-left: -11px;
     font-size: 29px;
     line-height: 38px;
     color: #ffffff;
     font-family: "SegoeWP-light";
-    font-weight: 300;
-
+    font-weight: 300px;
 }
 
 .section-2 div:nth-of-type(1) {
@@ -321,13 +336,131 @@ body {
     display: flex;
     position: absolute;
     margin: -2px 0px 0px 245px;
-    
-  
 }
 
 .section-3 {
     width: 1300px;
     height: 499px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: url("./assets/images/background_section-3.png")
 }
+
+ .section-3 div:nth-of-type(1) {
+    width: 601px;
+    height: 47px;
+    position: absolute;
+    margin: -184px 0px 139px 351px;
+ }
+
+.section-3 div h2 {
+    width: 601px;
+    height: 32px;
+    font-size: 43px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+
+.section-3 div:nth-of-type(2) {
+    width: 116px;
+    height: 116px;
+    margin: -99px 0px 0px 138px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/images/background_I\'ts_\ free.png");
+   
+ }
+
+ .section-3 div:nth-of-type(2) p {
+    width: 105px;
+    height: 14px;
+    margin: 0px 0px 0px 6px;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    text-transform: uppercase; 
+ }
+
+ 
+ .section-3 div:nth-of-type(3) {
+    margin: 30px 0px 0px 157px;
+   
+ }
+
+ .section-3 div:nth-of-type(4) {
+    margin: 33px 1px 0px 0px;
+ }
+
+ .section-3 div:nth-of-type(5) {
+    margin: 143px 76px 0px 0px;
+ }
+ 
+ .section-3 div:nth-of-type(6) ul {
+    width: 354px;
+    height: 45px;
+    margin: 0px 147px 90px 0px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    list-style-image: url("./assets/images/li.png");
+ }
+
+ .section-3 div:nth-of-type(6) ul li:nth-of-type(1) {
+    padding: 0px 0px 26px 13px;
+ }
+
+ .section-3 div:nth-of-type(6) ul li:nth-of-type(2) {
+    padding-left: 13px;
+    padding-bottom: 23px;
+ }
+
+ .section-3 div:nth-of-type(6) ul li:nth-of-type(3) {
+    padding-left: 13px;
+    padding-bottom: 29px;
+ }
+
+ .section-3 div:nth-of-type(6) ul li:nth-of-type(4) {
+    padding-left: 13px;
+ }
+
+ .footer {
+     width: 1300px;
+     height: 65px;
+     margin-top: -3px;
+     display: flex;
+     box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.5);
+     background-image: url("./assets/images/background_footer.png")
+ }
+
+ .footer img {
+     width: 54px;
+     height: 54px;
+     margin: 6px 0px 0px 140px;
+     border-radius: 9px;
+     background-image: url("./assets/images/background_logo_footer.png");
+     background-repeat: no-repeat;
+     background-position-x: 1px;
+     background-position-y: 1px;
+ }
+
+ .footer h2 {
+    margin: 19px 0px 0px 6px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase; 
+   
+ }
